@@ -63,7 +63,7 @@ Autorize o acesso no repositório togethercomputer/evo-1-8k-base.
 No terminal, execute:
 
 huggingface-cli login
-# Cole o seu Token quando solicitado
+» Cole o seu Token quando solicitado
 
 
 4. Resolução de Problemas (Troubleshooting) — Guia Multiplataforma 🆘
