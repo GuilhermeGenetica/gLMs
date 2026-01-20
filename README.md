@@ -2,15 +2,15 @@
 
 Modelos de Linguagem Genómica (gLMs) – Avanços, Aplicações Práticas e Implicações na Medicina Genómica e de Precisão
 
-🛠️ Genomic Variant Scorer Framework (gLM-Clinical)
+# 🛠️ Genomic Variant Scorer Framework (gLM-Clinical)
 
-1. Introdução 📖
+# 1. Introdução 📖
 
 O Genomic Variant Scorer Framework é uma ferramenta de bioinformática avançada baseada em Modelos de Linguagem Genómica (gLMs) fundacionais.
 
 Este framework foi concebido para traduzir a complexidade das sequências de ADN em métricas de probabilidade biológica, permitindo a identificação de variantes genéticas que podem comprometer a homeostase celular. Utilizando arquiteturas de última geração, como o Evo-1 (baseado em operadores Hyena), o sistema analisa o contexto global das sequências para prever o impacto de mutações pontuais ou estruturais.
 
-2. Objetivos do Código 🎯
+# 2. Objetivos do Código 🎯
 
 Quantificação de Fitness Biológica: Calcular a verosimilhança (Log-Likelihood) de sequências genéticas para determinar quão "naturais" ou "funcionais" elas são sob a ótica do modelo treinado em milhões de genomas.
 
@@ -20,7 +20,7 @@ Interpretabilidade Clínica: Converter scores matemáticos abstratos em classifi
 
 Hardware Agnostic: Permitir a execução tanto em infraestruturas de alto desempenho (GPUs NVIDIA) quanto em estações de trabalho convencionais (CPU) com gestão eficiente de memória.
 
-3. Configuração do Ambiente e Implementação ⚙️
+# 3. Configuração do Ambiente e Implementação ⚙️
 
 🟦 Passo 1: Correção de Caminhos e Executáveis
 
@@ -36,10 +36,10 @@ Execute os comandos abaixo para garantir a presença de todas as bibliotecas nec
 
 Ambiente Windows/Linux:
 
-# 1. Instalação das bibliotecas base e aceleradores
+» 1. Instalação das bibliotecas base e aceleradores
 pip install torch transformers huggingface-hub accelerate
 
-# 2. Instalação de dependências de manipulação de tensores (Mandatório para Evo/Hyena)
+» 2. Instalação de dependências de manipulação de tensores (Mandatório para Evo/Hyena)
 pip install einops sentencepiece
 
 
@@ -66,7 +66,7 @@ huggingface-cli login
 » Cole o seu Token quando solicitado
 
 
-4. Resolução de Problemas (Troubleshooting) — Guia Multiplataforma 🆘
+# 4. Resolução de Problemas (Troubleshooting) — Guia Multiplataforma 🆘
 
 Abaixo estão as soluções detalhadas para problemas comuns:
 
@@ -112,7 +112,7 @@ Solução (Windows): Adicione o Python ao PATH ou use o caminho absoluto para o 
 Solução (Linux): Verifique se o alias está configurado (alias python=python3) no seu .bashrc ou .zshrc.
 
 
-5. Saídas Esperadas 📊
+# 5. Saídas Esperadas 📊
 
 Ao executar o framework com sucesso, o utilizador verá:
 
@@ -123,7 +123,7 @@ Métricas de Sequência: Valores de Log-Likelihood para WT (Wild Type) e MUT (Mu
 Relatório de Variante: Bloco formatado com Delta LLR e classificação clínica automática.
 
 
-6. Interpretação dos Resultados (Delta LLR) 🧬
+# 6. Interpretação dos Resultados (Delta LLR) 🧬
 
 Os thresholds e as interpretações clínicas abaixo são baseados em benchmarks genómicos:
 
@@ -140,7 +140,7 @@ A interpretação clínica dos resultados baseada no **Delta Log-Likelihood Rati
 🔵 Por fim, quando o **score é superior a 1.0**, a variante é interpretada como **gain-of-function**. Nesse caso, a mutação torna a sequência mais “provável” segundo o modelo, o que pode refletir um possível ganho de função ou um fenómeno de adaptação evolutiva, embora tais interpretações devam ser analisadas com cautela no contexto clínico.
 
 
-7. Licença e Notas Finais 📝
+# 7. Licença e Notas Finais 📝
 
 Manutenção: Atualize as dependências periodicamente e verifique compatibilidade entre PyTorch e extensões (ex.: flash_attn).
 
